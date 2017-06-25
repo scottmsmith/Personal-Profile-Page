@@ -1,13 +1,21 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
+  /*font-family: 'Rubik', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'VT323', monospace;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;*/
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -45,6 +53,11 @@ a:hover {
     margin-right: auto;
     color: white;
 }
+
+.name {
+  font-family: 'Pacifico',cursive;
+}
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
@@ -57,35 +70,39 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/city.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
 header {
   line-height: 1.5;
+  padding: 20vh 0;
 }
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: .25em solid black;
   transition: all .5s;
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+.header{
+  padding: 20vh 0;
+}
 .tag {
-  background-color: #efefef;
-  color: black;
+  /*background-color: grey;*/
+  color: white;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
-  background-color: #222;
+  /*background-color: #222;*/
   color: yellow;
 }
 .card {
@@ -167,12 +184,21 @@ a.social:hover {
   clear: both;
 }
 
+i.down  {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -180,7 +206,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    min-height: 100vh;
   }
 
   .nav {
@@ -204,4 +230,3 @@ a.social:hover {
   }
 
 }
-
