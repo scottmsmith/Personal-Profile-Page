@@ -126,7 +126,7 @@
             continue;
         else {
             //build individual course content
-            courseHtml += "<div class='single-course'><i class='course-icons " + languageIcons[courseNamesArray[i][0]].class + "' style='color:"+ languageIcons[courseNamesArray[i][0]].color +"'></i><b>"+ courseNamesArray[i][0] +"</b> : "+ courseNamesArray[i][1] +"</div>";
+            courseHtml += "<div class='single-course'><i class='course-icons " + languageIcons[courseNamesArray[i][0]].class + "' style='color:"+ languageIcons[courseNamesArray[i][0]].color +"'></i> "+ courseNamesArray[i][1] + " points" + "</div>";
 
             pyramidHtml += "<li class='pyramid-skill' data-course-name='"+ courseNamesArray[i][0] +"' style='background:"+ languageIcons[courseNamesArray[i][0]].color +"; height:"+ (courseNamesArray[i][1]/totalPoints) * 100 +"%'></li>"
         }
