@@ -1,14 +1,6 @@
 /* Global Layout Set-up */
 * {
   box-sizing: border-box;
-  /*font-family: 'Rubik', sans-serif;
-  font-family: 'Pacifico', cursive;
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Cabin', sans-serif;
-  font-family: 'VT323', monospace;
-  font-family: 'Nunito', sans-serif;
-  font-family: 'Nunito Sans', sans-serif;*/
 }
 
 body {
@@ -79,17 +71,10 @@ header {
   line-height: 1.5;
   padding: 20vh 0;
 }
-header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: .25em solid black;
-  transition: all .5s;
+h2 {
+  text-align: center;
 }
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
-}
+
 .header{
   padding: 20vh 0;
 }
@@ -108,7 +93,7 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 450px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -169,13 +154,13 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -192,6 +177,42 @@ i.down  {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+.profile-image {
+  margin-left: 33%;
+  width: 140px;
+  height: 140px;
+  border-radius: 15% 15% 15% 15%;
+  border: .25em solid black;
+}
+#portfolio {
+  display: block;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 90%;
+  text-align: center;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+
+}
+.portfolio-image{
+  width:200px;
+  height:200px;
+  border-radius: 5%;
+  border-bottom: 4px solid #ccc;
+  transition: all .5s;
+
+}
+
+.portfolio-image:hover {
+  border-color: #ff99ff;
+}
+
+.social {
+  text-align: center;
+  display: block;
+}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
